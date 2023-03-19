@@ -9,11 +9,11 @@ Pour la manipulation et la représentation du carré magique, j’ai défini une
 Chacun de ces tableaux sont aussi désignés dans mon code comme des matrices. La structure « Square » contient aussi un entier « size » qui représente la taille totale de mon carré magique. Chacun des tableaux et de taille « size/2 » * « size/
 2 ».
 
-La fonction « initializeSquare » permet d’allouer dynamiquement de l’espace pour ma structure pour une taille donnée. La fonction « freeSquare » elle, libère la mémoire occupée par cette structure à la fin du code. Les fonctions suivantes permettent de sois calculé un carré magique :
+La fonction « initializeSquare » permet d’allouer dynamiquement de l’espace pour ma structure pour une taille donnée. La fonction « freeSquare » elle, libère la mémoire occupée par cette structure à la fin du code. Les fonctions suivantes permettent de sois calculer un carré magique :
 
-« generateSquare » , soit de procéder aux changements entre cadrant : « transformSquare » ou encore affiché ma structure Square : « printSquare ».
+« generateSquare » , soit de procéder aux changements entre cadrants : « transformSquare » ou encore afficher ma structure Square : « printSquare ».
 
-Plusieurs conditions au début du main permet de vérifier que le l’entier donné en entré du programme n’est pas négatif, impaire et divisible par 4 ; une fois ces conditions vérifiées, j’initialise la structure du carré magique. J ‘initialise aussi une matrice qui nous servira lors du calcule d’un cadrant dans les fils. Le pipe doit être appelé et la structure sigaction « sa » va nous permettre de recevoir les signales émis par le père. La fonction « handler » implémenter avant le main va gérer l’action à effectuer lors de cette réception. Dans l’ensemble du programme , le code de retour des primitifs systèmes est vérifier. La fonction « raler » est appelée pour sortir proprement du programme au cas où.
+Plusieurs conditions au début du main permet de vérifier que l’entier donné en entré du programme n’est pas négatif, impaire et divisible par 4 ; une fois ces conditions vérifiées, j’initialise la structure du carré magique. J ‘initialise aussi une matrice qui nous servira lors du calcule d’un cadrant dans les fils. Le pipe doit être appelé et la structure sigaction « sa » va nous permettre de recevoir les signales émis par le père. La fonction « handler » implémentée avant le main va gérer l’action à effectuer lors de cette réception. Dans l’ensemble du programme , le resultat du retours des primitifs systèmes est vérifiés. La fonction « raler » est appelée pour sortir proprement du programme au cas où.
 
  Enfin vient le lancement des fils. Pour pouvoir identifier les fils, on range leur pid dans un tableau, après les avoir lancé un par un. Cela va permet de lancer dans l’ordre le calcule de chaque cadrant et aussi au père d’envoyer le signal au cadrant voulu. Pour chaque fils :
 
