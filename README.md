@@ -4,7 +4,7 @@
 
 ### Louis-César Pagès, CMI S4-P, Université de Strasbourg, 27/04/2018
 
-Pour la manipulation et la représentation du carré magique, j’ai défini une structure « Square » contentant 4 tableaux à 2 dimensions.
+Pour la manipulation et la représentation du carré magique, j’ai défini une structure « Square » contenant 4 tableaux à 2 dimensions.
 
 Chacun de ces tableaux sont aussi désignés dans mon code comme des matrices. La structure « Square » contient aussi un entier « size » qui représente la taille totale de mon carré magique. Chacun des tableaux et de taille « size/2 » * « size/
 2 ».
